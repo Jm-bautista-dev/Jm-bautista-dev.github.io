@@ -34,7 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 20;
 }
 
 .logo {
@@ -56,12 +56,14 @@ nav a {
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    z-index: 20;
 }
 
 nav a:hover,
 nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
+    z-index: 20;
 }
 
 @media (max-width: 995px) {
@@ -79,16 +81,18 @@ nav a.active {
         transition: all 0.3s ease;
         max-height: 60vh; /* Ensure it doesn't overflow the viewport */
         overflow-y: auto; /* Add scroll if content overflows */
-        z-index: 1000; /* Higher z-index */
+        z-index: 20;
     }
     
     nav.active {
         display: block;
+        z-index: 20;
     }
     
     
     nav.active {
         display: block;
+        z-index: 20;
     }
 
     nav a {
@@ -97,6 +101,7 @@ nav a.active {
         margin: 1rem 0;
         text-decoration: none;
         transition: color 0.3s ease;
+        z-index: 20;
     }
 
     nav a:hover,
@@ -105,17 +110,20 @@ nav a.active {
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
         color: #b74b4b;
+        z-index: 20;
     }
 }
 /*hamburger menu*/
 .hamburger {
     display: none;
     cursor: pointer;
+    z-index: 20;
 }
 
 .hamburger i {
     font-size: 2.5rem;
     color: white;
+    z-index: 20;
 }
 
 
@@ -297,6 +305,7 @@ header, .btn, nav a, .social-icons a,.skill-box,.service-box {
     }
     nav.active {
         display: block;
+        z-index: 20;
     }
     nav {
         display: none;
@@ -312,11 +321,12 @@ header, .btn, nav a, .social-icons a,.skill-box,.service-box {
         transition: all 0.3s ease;
         max-height: 60vh;
         overflow-y: auto;
-        z-index: 1000;
+        z-index: 20;
     }
     
     nav.active {
         display: block;
+        z-index: 20;
     }
     nav a {
         display: block;
@@ -325,15 +335,18 @@ header, .btn, nav a, .social-icons a,.skill-box,.service-box {
         color: white;
         text-decoration: none;
         transition: color 0.3s ease;
+        z-index: 20;
     }
     nav a:hover,
     nav a.active {
     color: #b74b4b;
+    z-index: 20;
 }
 
     .hamburger {
         display: block;
         cursor: pointer;
+        z-index: 20;
     }
 }
 /*javascript area*/
